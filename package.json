@@ -1,0 +1,19 @@
+{
+"name": "buffet_abogados",
+"version": "1.0.0",
+"private": true,
+"scripts": {
+"dev": "tailwindcss -i ./src/styles/input.css -o ./public/output.css --watch",
+"build:clean": "node scripts/clean.js",
+"build:css": "tailwindcss -i ./src/styles/input.css -o ./public/output.css --minify",
+"build:html": "node scripts/copy-html.js",
+"build:js": "node scripts/copy-js.js",
+"build:assets": "node scripts/copy-assets.js",
+"build": "npm run build:clean && npm run build:css && npm run build:html && npm run build:js && npm run build:assets",
+"preview": "npx serve public -l 5174"
+},
+"dependencies": {
+"tailwindcss": "^4.1.14",
+"@tailwindcss/cli": "^4.1.14"
+}
+}
