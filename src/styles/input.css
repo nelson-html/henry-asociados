@@ -23,7 +23,18 @@
         transition: clip-path .3s ease;
     }
     .text-rojoMain {
-        color: #472427};
+        color: #472427
+    }
+    .fade-out {
+        opacity: 0;
+        transform: translateY(4px);
+        transition: opacity 250ms ease, transform 250ms ease;
+    }
+    .fade-in {
+        opacity: 1;
+        transform: translateY(0);
+        transition: opacity 250ms ease, transform 250ms ease;
+    }
 }
 :root{
     --color-rojoMain: #472427;

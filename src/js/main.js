@@ -49,29 +49,26 @@ d.addEventListener("click", (e) => {
 
 // textos aleatorios del banner de inicio
 
-function textoAleatorios(){
-    const Textos = [];
+const textos = ["Seguridad","Confianza","Privacidad","Responsabilidad","Respaldo","Integridad"];
+const $el = d.querySelector(".textos-aleatorios");
 
-    Textos[0] = "Seguridad"; 
-    Textos[1] = "Confianza";
-    Textos[2] = "Privacidad"; 
-    Textos[3] = "Responsabilidad"; 
-    Textos[4] = "Respaldo"; 
-    Textos[5] = "Integridad";
+function siguiente() {
+   // salir
+$el.classList.remove("fade-in");
+$el.classList.add("fade-out");
 
-    let aleat = Math.random() * (Textos.length);
-    aleat = Math.floor(aleat);
+setTimeout(() => {
+      // cambiar texto cuando ya está oculto
+    const next =
+         textos[Math.floor(Math.random() * textos.length)];
+    $el.innerText = next;
 
-    return Textos[aleat];
+      // entrar
+    requestAnimationFrame(() => {
+        $el.classList.remove("fade-out");
+        $el.classList.add("fade-in");
+    });
+   }, 250); // igual al tiempo de transición
 }
 
-function cambioDinamico(){
-    const elementoTexto = d.querySelector(".textos-aleatorios");
-
-    setInterval(()=>{
-        elementoTexto.innerText = textoAleatorios();
-    }, 3000)
-}
-
-$p_banner.innerText = textoAleatorios();
-cambioDinamico();
+setInterval(siguiente, 3000);
