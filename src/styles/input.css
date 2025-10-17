@@ -7,4 +7,24 @@
 
 @theme{
     --font-Montserrat: "Montserrat", sans-serif;
+    --text-1xl: 1.3rem;
+}
+@layer utilities{
+    .clip-apertura{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    }
+    .clip-cierre{
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+    .transition-apertura{
+        transition: clip-path .3s ease-in-out;
+    }
+    .transition-cierre{
+        transition: clip-path .3s ease;
+    }
+    .text-rojoMain {
+        color: #472427};
+}
+:root{
+    --color-rojoMain: #472427;
 }
