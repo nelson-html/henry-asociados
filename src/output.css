@@ -359,6 +359,12 @@
   .items-center {
     align-items: center;
   }
+  .items-end {
+    align-items: flex-end;
+  }
+  .items-start {
+    align-items: flex-start;
+  }
   .justify-between {
     justify-content: space-between;
   }
@@ -402,6 +408,9 @@
   .bg-\[\#f5f2f2\] {
     background-color: #f5f2f2;
   }
+  .bg-\[\#f\] {
+    background-color: #f;
+  }
   .bg-white {
     background-color: var(--color-white);
   }
@@ -425,6 +434,9 @@
   }
   .p-8 {
     padding: calc(var(--spacing) * 8);
+  }
+  .p-10 {
+    padding: calc(var(--spacing) * 10);
   }
   .px-3 {
     padding-inline: calc(var(--spacing) * 3);
