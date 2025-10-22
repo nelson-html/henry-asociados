@@ -19,7 +19,7 @@
 </head>
 <body class="box-border m-0 p-0">
 
-<div class="sticky top-0 z-50 w-screen">
+<div class="sticky top-0 z-50 w-screen ">
 
     <header class="flex justify-between items-center bg-[#472427] text-white w-full ">
       <div class="logo min-h-4 w-full ">
@@ -48,12 +48,15 @@
   <main class=" text-white flex flex-col w-screen font-Montserrat overflow-hidden ">
 
     <!-- banner de incio -->
-    <div class="w-full max-h-60 flex items-center ">
-      <img class="w-full object-cover" src="assets/main_banner.avif" alt="banner" >
+    <div class="w-full flex items-center">
+
+      <div class="w-full object-cover">
+        <img class="w-full max-h-9/12 block md:max-h-72 object-cover" src="assets/main_banner.avif" alt="banner" >
+      </div>
 
       <!-- palabras buble -->
-      <div class="absolute p-5 font-extrabold">
-        <p class="text-1xl">Te garantizamos</p>
+      <div class="absolute p-5  font-extrabold">
+        <p class="text-2xl md:mb-3">Te garantizamos</p>
         <div class="bg-white px-3 py-1 rounded-full shadow-sm inline-block ">
           <p class="textos-aleatorios text-[var(--color-rojoMain)] fade-in ">Resultados</p>
         </div>
@@ -63,12 +66,17 @@
     <!-- seccion1 -->
     <section id="firma" class="w-full text-black flex">
       <div class="flex flex-col p-4 gap-3 w-screen">
-        <h2 class="text-1xl font-bold text-end mt-5">
-          Henry & Asociados
-        </h2>
-        <p class=" text-end text-[.8rem] m-1 text-[var(--color-rojoMain)] mb-8 italic">
-          "Le acompañamos en sus procesos jurídicos con integridad y lealtad"
-        </p>
+
+        <div class="flex flex-col gap-3 items-end">
+          <h2 class="text-1xl font-bold text-end mt-5 md:text-2xl">
+            Henry & Asociados
+          </h2>
+          <p class=" text-end text-[.6rem] m-1 text-[var(--color-rojoMain)] mb-8 italic max-w-72 sm:max-w-96 md:text-[.8rem]">
+            "Le acompañamos en sus procesos jurídicos con integridad y lealtad"
+          </p>
+        
+      </div>
+
         <p class=" text-justify font-light mb-3">
           Henry & Asociados es un bufete en Nicaragua con sólida formación académica y experiencia en diversas ramas del derecho, entre ellos litigio y resolución alterna de conflictos, asesoría jurídica para inversionistas, asistencia legal a empresas, derecho de familia y contratos en general. Nos caracterizamos por ofrecer siempre soluciones jurídicas estratégicas, efectivas y al menor costo para nuestros clientes corporativos y personas nicaragüenses y extranjeros.
         </p>
@@ -77,54 +85,59 @@
     </section>
 
     <!-- seccion 2 -->
-    <section class="w-full flex flx-col p-4 bg-[#472427]">
+    <section class="w-full flex flx-col p-4 bg-[#472427] md:justify-center">
 
-      <div class="text-center p-2 my-12">
+      <div class="text-center p-2 my-12 md:w-full">
+
         <h2 class="text-1xl font-bold">
           ¿Por qué contratar a la firma jurídica Henry & Asociados?
         </h2>
-        <div class="p-5 mt-8 text-[.8rem]">
+
+        <div class="p-5 mt-8 text-[.8rem] md:w-full">
+
           <details class="text-start bg-white p-4 mb-4 text-[var(--color-rojoMain)]">
-            <summary>1. Bienes Raices</summary>
-            <p class="p-3 text-[#252525] text-[.6rem]">Contamos con abogados especialistas en propiedades que harán el proceso de la compra de bienes raíces mucho más fácil y seguro para usted.</p>
+            <summary class="md:text-[.9rem]">1. Bienes Raices</summary>
+            <p class="p-3 text-[#252525] text-[.6rem] md:text-[.7rem]">Contamos con abogados especialistas en propiedades que harán el proceso de la compra de bienes raíces mucho más fácil y seguro para usted.</p>
           </details>
 
           <details class="text-start bg-white p-4 mb-4 text-[var(--color-rojoMain)] ">
-            <summary class="text-[#252525]">2. Derecho Corporativo</summary>
-            <p class="p-3 text-[#252525] text-[.6rem]">Somos abogados bilingües empresariales para asesorarle con las más óptimas estrategias legales para el funcionamiento y operación de su empresa.</p>
+            <summary class="md:text-[.9rem]">2. Derecho Corporativo</summary>
+            <p class="p-3 text-[#252525] text-[.6rem] md:text-[.7rem]">Somos abogados bilingües empresariales para asesorarle con las más óptimas estrategias legales para el funcionamiento y operación de su empresa.</p>
           </details>
 
           <details class="text-start bg-white p-4 text-[var(--color-rojoMain)]  ">
-            <summary class="text-[#252525]">3. Litigios y resolución Alterna de conflictos</summary>
-            <p class="p-3 text-[#252525] text-[.6rem]">Tenemos un récord excelente en la representación de clientes en procesos judiciales y arbitrajes.</p>
+            <summary class="md:text-[.9rem]">3. Litigios y resolución Alterna de conflictos</summary>
+            <p class="p-3 text-[#252525] text-[.6rem] md:text-[.7rem]">Tenemos un récord excelente en la representación de clientes en procesos judiciales y arbitrajes.</p>
           </details>
         </div>
       </div>
     </section>
 
     <!-- seccion 3 -->
-    <section class="w-full py-16">
-      <div class="w-full flex flex-col text-black items-center p-3 gap-10">
+    <section class="w-full py-16 md:py-24">
+      
+      <div class="w-full flex flex-col text-black items-center p-3 gap-10 md:flex-wrap md:flex-row md:justify-center md:gap-5 md:py-8 md:content-between">
 
-        <div class="p-2 flex flex-col items-center gap-5">
+        <div class="p-2 flex flex-col items-center gap-5 md:w-1/3 md:grow md:shrink">
           <img loading="lazy" class="max-h-10 max-w-10" src="assets/seguridad.avif" alt="escudo">
           <h3>Seguridad</h3>
         </div>
 
-        <div class="p-2 flex flex-col items-center gap-5">
+        <div class="p-2 flex flex-col items-center gap-5 md:w-1/3 md:grow md:shrink">
           <img loading="lazy" class="max-h-10 max-w-10" src="assets/coin.avif" alt="moneda">
           <h3>Honestidad</h3>
         </div>
 
-        <div class="p-2 flex flex-col items-center gap-5">
+        <div class="p-2 flex flex-col items-center gap-5 md:w-1/3 md:grow md:shrink">
           <img loading="lazy" class="max-h-10 max-w-10" src="assets/privacidad.avif" alt="huella">
           <h3>Privacidad</h3>
         </div>
 
-        <div class="p-2 flex flex-col items-center gap-5">
+        <div class="p-2 flex flex-col items-center gap-5 md:w-1/3 md:grow md:shrink">
           <img loading="lazy" class="max-h-10 max-w-10" src="assets/diamond.avif" alt="diamante">
           <h3>Calidad</h3>
         </div>
+
       </div>
     </section>
 
@@ -192,51 +205,52 @@
       </div>
 
   <!-- Div contenedor de las tarjetas -->
-      <div class="flex flex-col w-full gap-5">
-        <div class="bg-white w-full flex flex-col items-center p-5">
-          <img class="h-auto min-h-9/12 rounded-full block" loading="lazy" src="assets/Phd-HenryTinoco.avif" alt="socio director">
-          <h6 class="pt-2 text-[var(--color-rojoMain)]">Phd. Henry Tinoco</h6>
-          <p class="text-[#252525] text-[.6rem]">Socio Director de la Firma</p>
+      <div class="flex flex-col w-full gap-5 md:flex-wrap md:gap-3 md:flex-row md:justify-center">
+
+        <div class="bg-white w-full flex flex-col items-center p-5 md:w-1/3 md:grow md:shrink">
+          <img class="h-auto min-h-8/12 rounded-full block md:max-h-64" loading="lazy" src="assets/Phd-HenryTinoco.avif" alt="socio director">
+          <h6 class="pt-2 text-[var(--color-rojoMain)] md:text-2xl">Phd. Henry Tinoco</h6>
+          <p class="text-[#252525] text-[.6rem] md:text-[.9rem]">Socio Director de la Firma</p>
           <div class="flex justify-evenly mt-5 w-full ">
             <a href=""><img loading="lazy" class="max-h-8 max-w-8" src="assets/email.avif" alt="email icon"></a>
             <a href=""><img loading="lazy" class="max-h-8 max-w-8" src="assets/linkedin.avif" alt="linkedin icon"></a>
           </div>
         </div>
 
-        <div class="bg-white w-full flex flex-col items-center p-5">
-          <img class="h-auto min-h-9/12 rounded-full block" loading="lazy" src="assets/Msc-JoseCajina.avif" alt="Msc. Jose Cajina">
-          <h6 class="pt-2 text-[var(--color-rojoMain)]">Msc. Jose Cajina</h6>
-          <p class="text-[#252525] text-[.6rem]">Socio Administrativo de la Firma</p>
+        <div class="bg-white w-full flex flex-col items-center p-5 md:w-1/3 md:grow md:shrink">
+          <img class="h-auto min-h-8/12 rounded-full block md:max-h-64" loading="lazy" src="assets/Msc-JoseCajina.avif" alt="Msc. Jose Cajina">
+          <h6 class="pt-2 text-[var(--color-rojoMain)] md:text-2xl">Msc. Jose Cajina</h6>
+          <p class="text-[#252525] text-[.6rem] md:text-[.9rem]">Socio Administrativo de la Firma</p>
           <div class="flex justify-evenly mt-5 w-full">
             <a href=""><img loading="lazy" class="max-h-8 max-w-8" src="assets/email.avif" alt="email icon"></a>
             <a href=""><img loading="lazy" class="max-h-8 max-w-8" src="assets/linkedin.avif" alt="linkedin icon"></a>
           </div>
         </div>
 
-        <div class="bg-white w-full flex flex-col items-center p-5">
-          <img class="h-auto min-h-9/12 rounded-full block" loading="lazy" src="assets/Lic.LizCastillo.avif" alt="Lic. Liz Castillo">
-          <h6 class="pt-2 text-[var(--color-rojoMain)]">Lic. Liz Castillo</h6>
-          <p class="text-[#252525] text-[.6rem]">Socia de Firma</p>
+        <div class="bg-white w-full flex flex-col items-center p-5 md:w-1/3 md:grow md:shrink">
+          <img class="h-auto min-h-8/12 rounded-full block md:max-h-64" loading="lazy" src="assets/Lic.LizCastillo.avif" alt="Lic. Liz Castillo">
+          <h6 class="pt-2 text-[var(--color-rojoMain)] md:text-2xl">Lic. Liz Castillo</h6>
+          <p class="text-[#252525] text-[.6rem] md:text-[.9rem]">Socia de Firma</p>
           <div class="flex justify-evenly mt-5 w-full">
             <a href=""><img loading="lazy" class="max-h-8 max-w-8" src="assets/email.avif" alt="email icon"></a>
             <a href=""><img loading="lazy" class="max-h-8 max-w-8" src="assets/linkedin.avif" alt="linkedin icon"></a>
           </div>
         </div>
 
-        <div class="bg-white w-full flex flex-col items-center p-5">
-          <img class="h-auto min-h-9/12 rounded-full block" loading="lazy" src="assets/Lic-SacharyzBorge.avif" alt="Lic. Sacharyz Borge">
-          <h6 class="pt-2 text-[var(--color-rojoMain)]">Lic. Sacharyz Borge</h6>
-          <p class="text-[#252525] text-[.6rem]">Socia de Firma</p>
+        <div class="bg-white w-full flex flex-col items-center p-5 md:w-1/3 md:grow md:shrink">
+          <img class="h-auto min-h-8/12 rounded-full block md:max-h-64" loading="lazy" src="assets/Lic-SacharyzBorge.avif" alt="Lic. Sacharyz Borge">
+          <h6 class="pt-2 text-[var(--color-rojoMain)] md:text-2xl">Lic. Sacharyz Borge</h6>
+          <p class="text-[#252525] text-[.6rem] md:text-[.9rem]">Socia de Firma</p>
           <div class="flex justify-evenly mt-5 w-full">
             <a href=""><img loading="lazy" class="max-h-8 max-w-8" src="assets/email.avif" alt="email icon"></a>
             <a href=""><img loading="lazy" class="max-h-8 max-w-8" src="assets/linkedin.avif" alt="linkedin icon"></a>
           </div>
         </div>
 
-        <div class="bg-white w-full flex flex-col items-center p-5 ">
-          <img class="h-auto min-h-9/12 rounded-full block" loading="lazy" src="assets/Lic-EliasUrbina.avif" alt="Lic. Elías Urbina">
-          <h6 class="pt-2 text-[var(--color-rojoMain)]">Lic. Elías Urbina</h6>
-          <p class="text-[#252525] text-[.6rem]">Director de Asistencia Legal de la Firma</p>
+        <div class="bg-white w-full flex flex-col items-center p-5 md:w-1/3 md:grow md:shrink">
+          <img class="h-auto min-h-8/12 rounded-full block md:max-h-64" loading="lazy" src="assets/Lic-EliasUrbina.avif" alt="Lic. Elías Urbina">
+          <h6 class="pt-2 text-[var(--color-rojoMain)] md:text-2xl">Lic. Elías Urbina</h6>
+          <p class="text-[#252525] text-[.6rem] md:text-[.9rem]">Director de Asistencia Legal de la Firma</p>
           <div class="flex justify-evenly mt-5 w-full">
             <a href=""><img loading="lazy" class="max-h-8 max-w-8" src="assets/email.avif" alt="email icon"></a>
             <a href=""><img loading="lazy" class="max-h-8 max-w-8" src="assets/linkedin.avif" alt="linkedin icon"></a>
