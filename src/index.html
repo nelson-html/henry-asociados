@@ -17,28 +17,32 @@
     <title>Henry & Asociados</title>
 
 </head>
+
 <body class="box-border m-0 p-0">
 
-<div class="sticky top-0 z-50 w-screen ">
+<div class="sticky top-0 z-50 w-screen lg:overflow-hidden">
 
-    <header class="flex justify-between items-center bg-[#472427] text-white w-full ">
-      <div class="logo min-h-4 w-full ">
-        <img class=" max-h-20 " src="assets/logo_tinoco&asociados.avif" alt="logo el asociados">
+    <header class="flex justify-between items-center bg-[#472427] text-white w-full lg:overflow-hidden lg:px-3`">
+      <div class="logo min-h-4 w-full lg:w-full">
+        <img class=" max-h-20 lg:block lg:min-h-8/12" src="assets/logo_tinoco&asociados.avif" alt="logo el asociados">
       </div>
 
-    <nav class="nav flex pr-3 ">
-      <img class="nav-hamburger pl-3 max-h-20 " src="assets/menu-right.png" alt="icon_burger ">
+    <nav class="nav flex pr-3 lg:w-full lg:">
+      <img class="nav-hamburger pl-3 max-h-16  lg:hidden lg:cursor-pointer" src="assets/menu-right.png" alt="icon_burger">
+
       <ul
         class="ul absolute top-20 left-0 m-auto flex w-full flex-col gap-4 text-center
          bg-[#472427] p-5
          overflow-hidden
          max-h-0 opacity-0 -translate-y-2 pointer-events-none
-         transition-all duration-300 ease-out font-Montserrat "
+         transition-all duration-300 ease-out font-Montserrat 
+         lg:static lg:flex lg:flex-row lg:items-center lg:gap-8 lg:bg-transparent lg:p-0
+        lg:max-h-none lg:opacity-100 lg:translate-y-0 lg:pointer-events-auto lg:justify-end lg:"
       >
-        <li><a href="#">Inicio</a></li>
-        <li><a href="#firma">Nuestra Firma</a></li>
-        <li><a href="#areaspractica">Areas de Practica</a></li>
-        <li><a href="#contacto">Contacto</a></li>
+        <li><a class="hover:text-amber-100" href="#">Inicio</a></li>
+        <li><a class="hover:text-amber-100" href="#firma">Nuestra Firma</a></li>
+        <li><a class="hover:text-amber-100" href="#areaspractica">Areas de Practica</a></li>
+        <li><a class="hover:text-amber-100" href="#contacto">Contacto</a></li>
       </ul>
     </nav>
     
@@ -48,10 +52,10 @@
   <main class=" text-white flex flex-col w-screen font-Montserrat overflow-hidden ">
 
     <!-- banner de incio -->
-    <div class="w-full flex items-center">
+    <div class="w-screen flex items-center">
 
       <div class="w-full object-cover">
-        <img class="w-full max-h-9/12 block md:max-h-72 object-cover" src="assets/main_banner.avif" alt="banner" >
+        <img class="w-full max-h-9/12 block md:max-h-72 object-cover lg:max-h-96 lg:object-top" src="assets/main_banner.avif" alt="banner" >
       </div>
 
       <!-- palabras buble -->
@@ -64,7 +68,7 @@
     </div>
 
     <!-- seccion1 -->
-    <section id="firma" class="w-full text-black flex">
+    <section id="firma" class="w-screen text-black flex">
       <div class="flex flex-col p-4 gap-3 w-screen">
 
         <div class="flex flex-col gap-3 items-end">
@@ -85,7 +89,7 @@
     </section>
 
     <!-- seccion 2 -->
-    <section class="w-full flex flx-col p-4 bg-[#472427] md:justify-center">
+    <section class="w-screen flex flx-col p-4 bg-[#472427] md:justify-center">
 
       <div class="text-center p-2 my-12 md:w-full">
 
@@ -114,7 +118,7 @@
     </section>
 
     <!-- seccion 3 -->
-    <section class="w-full py-16 md:py-24">
+    <section class="w-screen py-16 md:py-24">
       
       <div class="w-full flex flex-col text-black items-center p-3 gap-10 md:flex-wrap md:flex-row md:justify-center md:gap-5 md:py-8 md:content-between">
 
@@ -142,35 +146,39 @@
     </section>
 
     <!-- Seccion 4 -->
-    <section id="areaspractica" class="w-full text-black p-4 py-15 text-center bg-[#f5f2f2]">
+    <section id="areaspractica" class="w-screen text-black p-4 py-15 text-center bg-[#f5f2f2]">
       <div class="w-full flex flex-col ">
-        <h2 class="text-[var(--color-rojoMain)] text-1xl font-bold">Áreas de práctica</h2>
+        <h2 class="text-[var(--color-rojoMain)] text-1xl font-bold lg:text-2xl">Áreas de práctica</h2>
         <p class="text-[#252525] text-[.8rem]">Somos líderes en la prevención y resolución de conflictos empresariales en Nicaragua de manera pronta, eficaz y estratégica.</p>
       </div>
 
       <!-- cajas -->
-      <div class="flex flex-col w-full p-5 gap-10 mt-10">
-        <div class="flex flex-col items-center bg-white p-8 gap-5">
+      <div class="flex flex-col w-full p-5 gap-10 mt-10 lg:flex-row lg:flex-wrap">
+        <div class="flex flex-col items-center bg-white p-8 gap-5 lg:shrink lg:grow lg:w-1/3">
           <img loading="lazy" class="max-h-10 max-w-10" src="assets/derecho.avif" alt="">
           <h4 class="font-bold">Derecho Corporativo</h4>
           <p class="text-[#353535]">Asesoramos en todo el ramo de derecho corporativo, desde inversiones, contratos, fusiones, adquisiciones, entre otros.</p>
         </div>
-        <div class="flex flex-col items-center bg-white p-8 gap-5">
+
+        <div class="flex flex-col items-center bg-white p-8 gap-5 lg:shrink lg:grow lg:w-1/3">
           <img loading="lazy" class="max-h-10 max-w-10" src="assets/greeting.avif" alt="">
           <h4 class="font-bold">Litigio y Resolución Alterna de conflictos</h4>
           <p class="text-[#353535]">Establecemos estrategias exitosas para resolver conflictos de la manera más efectiva y eficaz para nuestros clientes.</p>
         </div>
-        <div class="flex flex-col items-center bg-white p-8 gap-5">
+
+        <div class="flex flex-col items-center bg-white p-8 gap-5 lg:shrink lg:grow lg:w-1/3">
           <img loading="lazy" class="max-h-10 max-w-10" src="assets/people.avif" alt="">
           <h4 class="font-bold">Derecho de familia</h4>
           <p class="text-[#353535]">Nuestros abogados especialistas en derecho de familia le asesorarán con veracidad, sensibilidad, empatía y discreción.</p>
         </div>
-        <div class="flex flex-col items-center bg-white p-8 gap-5">
+
+        <div class="flex flex-col items-center bg-white p-8 gap-5 lg:shrink lg:grow lg:w-1/3">
           <img loading="lazy" class="max-h-10 max-w-10" src="assets/bienes.avif" alt="">
           <h4 class="font-bold">Bienes Raices</h4>
           <p class="text-[#353535]">Somos abogados especializados en bienes raíces para la compra y venta segura de propiedades en Nicaragua.</p>
         </div>
-        <div class="flex flex-col items-center bg-white p-8 gap-5">
+
+        <div class="flex flex-col items-center bg-white p-8 gap-5 lg:shrink lg:grow lg:w-1/3">
           <img loading="lazy" class="max-h-10 max-w-10" src="assets/cliente.avif" alt="">
           <h4 class="font-bold">Servicio a Individuos</h4>
           <p class="text-[#353535]">Ya sea nicaragüense o extranjero, contamos con abogados en derecho migratorio y servicios notariales.</p>
@@ -180,7 +188,7 @@
     </section>
 
     <!-- horario de atencion -->
-    <section class="w-full flex flex-col text-black py-20 text-center gap-5">
+    <section class="w-screen flex flex-col text-black py-20 text-center gap-5">
       <div class="font-bold text-2xl">
         <h5>Horario de atención</h5>
       </div>
@@ -199,9 +207,9 @@
 
     <!-- equipo de abogados -->
     <section class="w-full flex flex-col text-black text-center p-10 bg-[#f5f2f2] ">
-      <div class="py-5 w-full flex flex-col items-center">
-        <h6 class="font-bold text-1xl">Nuestro equipo de abogados</h6>
-        <p class="text-[.6rem] max-w-60 text-[#252525]">Conozca a los socios y asociados del mejor bufete de abogados de Nicaragua</p>
+      <div class="py-5 w-full flex flex-col items-center lg:py-16">
+        <h6 class="font-bold text-1xl lg:text-2xl">Nuestro equipo de abogados</h6>
+        <p class="text-[.6rem] max-w-60 text-[#252525] lg:text-[.8rem] lg:max-w-72">Conozca a los socios y asociados del mejor bufete de abogados de Nicaragua</p>
       </div>
 
   <!-- Div contenedor de las tarjetas -->
@@ -264,22 +272,23 @@
   </main>
 
   <!-- footer -->
-  <footer id="contacto" class="w-full flex flex-col gap-5 p-5 bg-[#472427] text-white">
-    <div class="w-full flex flex-col gap-5 ">
+  <footer id="contacto" class="w-screen flex flex-col gap-5 p-5 bg-[#472427] text-white lg:flex-row">
+
+    <div class="w-full flex flex-col gap-5 md:flex-row md:justify-evenly md:py-10 lg:flex-col lg:px-10 lg:content-center">
 
       <div class="flex items-center gap-2">
         <img loading="lazy" class="max-w-8 max-h-8 filter brightness-0 invert" src="assets/email.avif" alt="mail">
-        <a class="" href="mailto:tinocomathew845@gmail.com">tinocomathew845@gmail.com</a>
+        <a class="hover:text-amber-100" href="mailto:tinocomathew845@gmail.com">tinocomathew845@gmail.com</a>
       </div>
 
       <div class="flex items-center gap-2">
         <img loading="lazy" class="max-w-8 max-h-8" src="assets/phone.avif" alt="phone">
-        <a href="tel:+50558033696">+505 5803 3696</a>
+        <a class="hover:text-amber-100" href="tel:+50558033696">+505 5803 3696</a>
       </div>
 
       <div class="flex items-center gap-2">
         <img loading="lazy" class="max-w-8 max-h-8" src="assets/location.avif" alt="location">
-        <a target="_blank" href="https://maps.app.goo.gl/9wVv6xdJpJYS95yc6">Barrio Posada del Sol, Casa #24</a>
+        <a class="hover:text-amber-100" target="_blank" href="https://maps.app.goo.gl/9wVv6xdJpJYS95yc6">Barrio Posada del Sol, Casa #24</a>
       </div>
     </div>
 
