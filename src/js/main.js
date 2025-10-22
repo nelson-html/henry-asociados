@@ -72,3 +72,8 @@ setTimeout(() => {
 }
 
 setInterval(siguiente, 3000);
+
+// mapa georeferencia
+
+
+

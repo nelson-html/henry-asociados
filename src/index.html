@@ -4,6 +4,15 @@
     <meta charset="UTF-8">
     <link rel="shortcut icon" href="assets/logo_tinoco&asociados.avif" type="image/x-icon">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- maplibre y mapkick -->
+    <link href="https://unpkg.com/maplibre-gl@2.4.0/dist/maplibre-gl.css" rel="stylesheet" />
+    <script src="https://unpkg.com/maplibre-gl@2.4.0/dist/maplibre-gl.js"></script>
+    <script src="js/mapkick.js"></script>
+    <script>
+      Mapkick.options = {style: "https://demotiles.maplibre.org/style.json"}
+    </script>
+
     <link href="output.css" rel="stylesheet">
     <title>Henry & Asociados</title>
 
@@ -98,22 +107,22 @@
       <div class="w-full flex flex-col text-black items-center p-3 gap-10">
 
         <div class="p-2 flex flex-col items-center gap-5">
-          <img class="max-h-10 max-w-10" src="assets/seguridad.avif" alt="escudo">
+          <img loading="lazy" class="max-h-10 max-w-10" src="assets/seguridad.avif" alt="escudo">
           <h3>Seguridad</h3>
         </div>
 
         <div class="p-2 flex flex-col items-center gap-5">
-          <img class="max-h-10 max-w-10" src="assets/coin.avif" alt="moneda">
+          <img loading="lazy" class="max-h-10 max-w-10" src="assets/coin.avif" alt="moneda">
           <h3>Honestidad</h3>
         </div>
 
         <div class="p-2 flex flex-col items-center gap-5">
-          <img class="max-h-10 max-w-10" src="assets/privacidad.avif" alt="huella">
+          <img loading="lazy" class="max-h-10 max-w-10" src="assets/privacidad.avif" alt="huella">
           <h3>Privacidad</h3>
         </div>
 
         <div class="p-2 flex flex-col items-center gap-5">
-          <img class="max-h-10 max-w-10" src="assets/diamond.avif" alt="diamante">
+          <img loading="lazy" class="max-h-10 max-w-10" src="assets/diamond.avif" alt="diamante">
           <h3>Calidad</h3>
         </div>
       </div>
@@ -129,27 +138,27 @@
       <!-- cajas -->
       <div class="flex flex-col w-full p-5 gap-10 mt-10">
         <div class="flex flex-col items-center bg-white p-8 gap-5">
-          <img class="max-h-10 max-w-10" src="assets/derecho.avif" alt="">
+          <img loading="lazy" class="max-h-10 max-w-10" src="assets/derecho.avif" alt="">
           <h4 class="font-bold">Derecho Corporativo</h4>
           <p class="text-[#353535]">Asesoramos en todo el ramo de derecho corporativo, desde inversiones, contratos, fusiones, adquisiciones, entre otros.</p>
         </div>
         <div class="flex flex-col items-center bg-white p-8 gap-5">
-          <img class="max-h-10 max-w-10" src="assets/greeting.avif" alt="">
+          <img loading="lazy" class="max-h-10 max-w-10" src="assets/greeting.avif" alt="">
           <h4 class="font-bold">Litigio y Resolución Alterna de conflictos</h4>
           <p class="text-[#353535]">Establecemos estrategias exitosas para resolver conflictos de la manera más efectiva y eficaz para nuestros clientes.</p>
         </div>
         <div class="flex flex-col items-center bg-white p-8 gap-5">
-          <img class="max-h-10 max-w-10" src="assets/people.avif" alt="">
+          <img loading="lazy" class="max-h-10 max-w-10" src="assets/people.avif" alt="">
           <h4 class="font-bold">Derecho de familia</h4>
           <p class="text-[#353535]">Nuestros abogados especialistas en derecho de familia le asesorarán con veracidad, sensibilidad, empatía y discreción.</p>
         </div>
         <div class="flex flex-col items-center bg-white p-8 gap-5">
-          <img class="max-h-10 max-w-10" src="assets/bienes.avif" alt="">
+          <img loading="lazy" class="max-h-10 max-w-10" src="assets/bienes.avif" alt="">
           <h4 class="font-bold">Bienes Raices</h4>
           <p class="text-[#353535]">Somos abogados especializados en bienes raíces para la compra y venta segura de propiedades en Nicaragua.</p>
         </div>
         <div class="flex flex-col items-center bg-white p-8 gap-5">
-          <img class="max-h-10 max-w-10" src="assets/cliente.avif" alt="">
+          <img loading="lazy" class="max-h-10 max-w-10" src="assets/cliente.avif" alt="">
           <h4 class="font-bold">Servicio a Individuos</h4>
           <p class="text-[#353535]">Ya sea nicaragüense o extranjero, contamos con abogados en derecho migratorio y servicios notariales.</p>
         </div>
@@ -176,55 +185,64 @@
     </section>
 
     <!-- equipo de abogados -->
-    <section class="w-full flex flex-col text-black text-center p-10 border bg-[#f5f2f2]">
+    <section class="w-full flex flex-col text-black text-center p-10 bg-[#f5f2f2] ">
       <div class="py-5 w-full flex flex-col items-center">
         <h6 class="font-bold text-1xl">Nuestro equipo de abogados</h6>
         <p class="text-[.6rem] max-w-60 text-[#252525]">Conozca a los socios y asociados del mejor bufete de abogados de Nicaragua</p>
       </div>
-  
-      <div class="flex flex-col w-full ">
-        <div class="bg-white w-full flex flex-col items-center p-5">
-          <img class="max-h-40 max-w-40 rounded-full" src="assets/Phd-HenryTinoco.avif" alt="socio director">
-          <h6>Phd. Henry Tinoco</h6>
-          <p class="text-[#252525] text-[.6rem]">Socio Director de la Firma</p>
 
-          <div class="flex justify-between mt-5 w-full">
-            <img class="max-h-8 max-w-8" src="assets/email.avif" alt="email icon">
-            <img class="max-h-8 max-w-8" src="assets/linkedin.avif" alt="linkedin icon">
+  <!-- Div contenedor de las tarjetas -->
+      <div class="flex flex-col w-full gap-5">
+        <div class="bg-white w-full flex flex-col items-center p-5">
+          <img class="h-auto min-h-9/12 rounded-full block" loading="lazy" src="assets/Phd-HenryTinoco.avif" alt="socio director">
+          <h6 class="pt-2 text-[var(--color-rojoMain)]">Phd. Henry Tinoco</h6>
+          <p class="text-[#252525] text-[.6rem]">Socio Director de la Firma</p>
+          <div class="flex justify-evenly mt-5 w-full ">
+            <a href=""><img loading="lazy" class="max-h-8 max-w-8" src="assets/email.avif" alt="email icon"></a>
+            <a href=""><img loading="lazy" class="max-h-8 max-w-8" src="assets/linkedin.avif" alt="linkedin icon"></a>
           </div>
         </div>
-        <div>
-          <img src="" alt="">
-          <h6></h6>
-          <div>
-            <img src="" alt="">
-            <img src="" alt="">
+
+        <div class="bg-white w-full flex flex-col items-center p-5">
+          <img class="h-auto min-h-9/12 rounded-full block" loading="lazy" src="assets/Msc-JoseCajina.avif" alt="Msc. Jose Cajina">
+          <h6 class="pt-2 text-[var(--color-rojoMain)]">Msc. Jose Cajina</h6>
+          <p class="text-[#252525] text-[.6rem]">Socio Administrativo de la Firma</p>
+          <div class="flex justify-evenly mt-5 w-full">
+            <a href=""><img loading="lazy" class="max-h-8 max-w-8" src="assets/email.avif" alt="email icon"></a>
+            <a href=""><img loading="lazy" class="max-h-8 max-w-8" src="assets/linkedin.avif" alt="linkedin icon"></a>
           </div>
         </div>
-        <div>
-          <img src="" alt="">
-          <h6></h6>
-          <div>
-            <img src="" alt="">
-            <img src="" alt="">
+
+        <div class="bg-white w-full flex flex-col items-center p-5">
+          <img class="h-auto min-h-9/12 rounded-full block" loading="lazy" src="assets/Lic.LizCastillo.avif" alt="Lic. Liz Castillo">
+          <h6 class="pt-2 text-[var(--color-rojoMain)]">Lic. Liz Castillo</h6>
+          <p class="text-[#252525] text-[.6rem]">Socia de Firma</p>
+          <div class="flex justify-evenly mt-5 w-full">
+            <a href=""><img loading="lazy" class="max-h-8 max-w-8" src="assets/email.avif" alt="email icon"></a>
+            <a href=""><img loading="lazy" class="max-h-8 max-w-8" src="assets/linkedin.avif" alt="linkedin icon"></a>
           </div>
         </div>
-        <div>
-          <img src="" alt="">
-          <h6></h6>
-          <div>
-            <img src="" alt="">
-            <img src="" alt="">
+
+        <div class="bg-white w-full flex flex-col items-center p-5">
+          <img class="h-auto min-h-9/12 rounded-full block" loading="lazy" src="assets/Lic-SacharyzBorge.avif" alt="Lic. Sacharyz Borge">
+          <h6 class="pt-2 text-[var(--color-rojoMain)]">Lic. Sacharyz Borge</h6>
+          <p class="text-[#252525] text-[.6rem]">Socia de Firma</p>
+          <div class="flex justify-evenly mt-5 w-full">
+            <a href=""><img loading="lazy" class="max-h-8 max-w-8" src="assets/email.avif" alt="email icon"></a>
+            <a href=""><img loading="lazy" class="max-h-8 max-w-8" src="assets/linkedin.avif" alt="linkedin icon"></a>
           </div>
         </div>
-        <div>
-          <img src="" alt="">
-          <h6></h6>
-          <div>
-            <img src="" alt="">
-            <img src="" alt="">
+
+        <div class="bg-white w-full flex flex-col items-center p-5 ">
+          <img class="h-auto min-h-9/12 rounded-full block" loading="lazy" src="assets/Lic-EliasUrbina.avif" alt="Lic. Elías Urbina">
+          <h6 class="pt-2 text-[var(--color-rojoMain)]">Lic. Elías Urbina</h6>
+          <p class="text-[#252525] text-[.6rem]">Director de Asistencia Legal de la Firma</p>
+          <div class="flex justify-evenly mt-5 w-full">
+            <a href=""><img loading="lazy" class="max-h-8 max-w-8" src="assets/email.avif" alt="email icon"></a>
+            <a href=""><img loading="lazy" class="max-h-8 max-w-8" src="assets/linkedin.avif" alt="linkedin icon"></a>
           </div>
         </div>
+
       </div>
   
     </section>
@@ -232,30 +250,33 @@
   </main>
 
   <!-- footer -->
-  <footer id="contacto" class="footer">
-    <div>
-      <div>
-        <img src="" alt="">
-        <span><a href="tinocomathew845@gmail.com">tinocomathew845@gmail.com</a></span>
+  <footer id="contacto" class="w-full flex flex-col gap-5 p-5 bg-[#472427] text-white">
+    <div class="w-full flex flex-col gap-5 ">
+
+      <div class="flex items-center gap-2">
+        <img loading="lazy" class="max-w-8 max-h-8 filter brightness-0 invert" src="assets/email.avif" alt="mail">
+        <a class="" href="mailto:tinocomathew845@gmail.com">tinocomathew845@gmail.com</a>
       </div>
-      <div>
-        <img src="" alt="">
-        <span>+505 5803 3696</span>
+
+      <div class="flex items-center gap-2">
+        <img loading="lazy" class="max-w-8 max-h-8" src="assets/phone.avif" alt="phone">
+        <a href="tel:+50558033696">+505 5803 3696</a>
       </div>
-      <div>
-        <img src="" alt="">
-        <span>Barrio Posada del Sol, Casa #24</span>
+
+      <div class="flex items-center gap-2">
+        <img loading="lazy" class="max-w-8 max-h-8" src="assets/location.avif" alt="location">
+        <a target="_blank" href="https://maps.app.goo.gl/9wVv6xdJpJYS95yc6">Barrio Posada del Sol, Casa #24</a>
       </div>
     </div>
-
 
     <!-- Georeferencia -->
-    <div>
-
-    </div>
-  </footer>
+    <div id="map" class="w-full min-h-60 shadow"></div>
+    </footer>
 
 
+    <script>
+      new Mapkick.Map("map", [{latitude: 12.443111, longitude: -86.865667}])
+    </script>
     <script src="js/main.js"></script>
 </body>
 </html>
