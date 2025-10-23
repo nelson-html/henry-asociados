@@ -18,26 +18,26 @@
 
 </head>
 
-<body class="box-border m-0 p-0">
+<body class="box-border m-0 p-0 overflow-x-hidden">
 
-<div class="sticky top-0 z-50 w-screen lg:overflow-hidden">
+<div class="sticky top-0 z-50 w-screen">
 
-    <header class="flex justify-between items-center bg-[#472427] text-white w-full lg:overflow-hidden lg:px-3`">
-      <div class="logo min-h-4 w-full lg:w-full">
-        <img class=" max-h-20 lg:block lg:min-h-8/12" src="assets/logo_tinoco&asociados.avif" alt="logo el asociados">
+    <header class="flex justify-between items-center bg-[#472427] text-white w-screen lg:overflow-hidden lg:px-3 ">
+      <div class="logo min-h-4 w-full lg:w-full ">
+        <img class=" max-h-16 lg:block lg:min-h-8/12" src="assets/logo_tinoco&asociados.avif" alt="logo el asociados">
       </div>
 
-    <nav class="nav flex pr-3 lg:w-full lg:">
+    <nav class="nav w-full justify-end flex pr-3 lg:w-full ">
       <img class="nav-hamburger pl-3 max-h-16  lg:hidden lg:cursor-pointer" src="assets/menu-right.png" alt="icon_burger">
 
       <ul
-        class="ul absolute top-20 left-0 m-auto flex w-full flex-col gap-4 text-center
+        class="ul absolute top-16 left-0 m-auto flex w-full flex-col gap-4 text-center
          bg-[#472427] p-5
          overflow-hidden
          max-h-0 opacity-0 -translate-y-2 pointer-events-none
          transition-all duration-300 ease-out font-Montserrat 
          lg:static lg:flex lg:flex-row lg:items-center lg:gap-8 lg:bg-transparent lg:p-0
-        lg:max-h-none lg:opacity-100 lg:translate-y-0 lg:pointer-events-auto lg:justify-end lg:"
+        lg:max-h-none lg:opacity-100 lg:translate-y-0 lg:pointer-events-auto lg:justify-end "
       >
         <li><a class="hover:text-amber-100" href="#">Inicio</a></li>
         <li><a class="hover:text-amber-100" href="#firma">Nuestra Firma</a></li>
@@ -52,7 +52,7 @@
   <main class=" text-white flex flex-col w-screen font-Montserrat overflow-hidden ">
 
     <!-- banner de incio -->
-    <div class="w-screen flex items-center">
+    <div class="w-screen flex items-center ">
 
       <div class="w-full object-cover">
         <img class="w-full max-h-9/12 block md:max-h-72 object-cover lg:max-h-96 lg:object-top" src="assets/main_banner.avif" alt="banner" >
@@ -69,7 +69,7 @@
 
     <!-- seccion1 -->
     <section id="firma" class="w-screen text-black flex">
-      <div class="flex flex-col p-4 gap-3 w-screen">
+      <div class="flex flex-col p-4 gap-3 w-full lg:p-8">
 
         <div class="flex flex-col gap-3 items-end">
           <h2 class="text-1xl font-bold text-end mt-5 md:text-2xl">
@@ -81,7 +81,7 @@
         
       </div>
 
-        <p class=" text-justify font-light mb-3">
+        <p class="w-full lg:px-8 text-justify font-light mb-3">
           Henry & Asociados es un bufete en Nicaragua con sólida formación académica y experiencia en diversas ramas del derecho, entre ellos litigio y resolución alterna de conflictos, asesoría jurídica para inversionistas, asistencia legal a empresas, derecho de familia y contratos en general. Nos caracterizamos por ofrecer siempre soluciones jurídicas estratégicas, efectivas y al menor costo para nuestros clientes corporativos y personas nicaragüenses y extranjeros.
         </p>
       </div>
