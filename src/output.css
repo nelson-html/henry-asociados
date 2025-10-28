@@ -24,7 +24,6 @@
     --font-weight-medium: 500;
     --font-weight-bold: 700;
     --font-weight-extrabold: 800;
-    --radius-lg: 0.5rem;
     --ease-out: cubic-bezier(0, 0, 0.2, 1);
     --default-transition-duration: 150ms;
     --default-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -237,6 +236,9 @@
   .m-auto {
     margin: auto;
   }
+  .my-10 {
+    margin-block: calc(var(--spacing) * 10);
+  }
   .my-12 {
     margin-block: calc(var(--spacing) * 12);
   }
@@ -294,6 +296,9 @@
   .max-h-0 {
     max-height: calc(var(--spacing) * 0);
   }
+  .max-h-1 {
+    max-height: calc(var(--spacing) * 1);
+  }
   .max-h-8 {
     max-height: calc(var(--spacing) * 8);
   }
@@ -305,6 +310,12 @@
   }
   .max-h-10 {
     max-height: calc(var(--spacing) * 10);
+  }
+  .max-h-12 {
+    max-height: calc(var(--spacing) * 12);
+  }
+  .max-h-14 {
+    max-height: calc(var(--spacing) * 14);
   }
   .max-h-16 {
     max-height: calc(var(--spacing) * 16);
@@ -324,17 +335,29 @@
   .min-h-60 {
     min-height: calc(var(--spacing) * 60);
   }
+  .w-fit {
+    width: fit-content;
+  }
   .w-full {
     width: 100%;
   }
   .w-screen {
     width: 100vw;
   }
+  .max-w-1 {
+    max-width: calc(var(--spacing) * 1);
+  }
   .max-w-8 {
     max-width: calc(var(--spacing) * 8);
   }
   .max-w-10 {
     max-width: calc(var(--spacing) * 10);
+  }
+  .max-w-12 {
+    max-width: calc(var(--spacing) * 12);
+  }
+  .max-w-14 {
+    max-width: calc(var(--spacing) * 14);
   }
   .max-w-60 {
     max-width: calc(var(--spacing) * 60);
@@ -364,6 +387,9 @@
   }
   .transform {
     transform: var(--tw-rotate-x,) var(--tw-rotate-y,) var(--tw-rotate-z,) var(--tw-skew-x,) var(--tw-skew-y,);
+  }
+  .cursor-pointer {
+    cursor: pointer;
   }
   .resize {
     resize: both;
@@ -623,6 +649,27 @@
   .ease-out {
     --tw-ease: var(--ease-out);
     transition-timing-function: var(--ease-out);
+  }
+  .hover\:bg-\[\#3b1b1d\] {
+    &:hover {
+      @media (hover: hover) {
+        background-color: #3b1b1d;
+      }
+    }
+  }
+  .hover\:bg-\[\#472427\] {
+    &:hover {
+      @media (hover: hover) {
+        background-color: #472427;
+      }
+    }
+  }
+  .hover\:bg-\[emerald-700\] {
+    &:hover {
+      @media (hover: hover) {
+        background-color: emerald-700;
+      }
+    }
   }
   .hover\:bg-emerald-700 {
     &:hover {
