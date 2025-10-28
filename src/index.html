@@ -269,6 +269,84 @@
   
     </section>
 
+    <!-- agenda tu cita -->
+    <section class="w-full flex flex-col text-black">
+      <form
+        id="agenda"
+        class="space-y-4 max-w-xl flex py-10 justify-center flex-col m-auto"
+        novalidate
+      >
+        <div>
+          <label class="block text-sm font-medium">Nombre completo</label>
+          <input
+            name="name"
+            required
+            class="mt-1 w-full rounded border px-3 py-2"
+            placeholder="Nombre & Apellido"
+          >
+        </div>
+      
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <div>
+            <label class="block text-sm font-medium">Fecha deseada</label>
+            <input
+              type="date"
+              name="date"
+              required
+              class="mt-1 w-full rounded border px-3 py-2"
+            >
+          </div>
+          <div>
+            <label class="block text-sm font-medium">Hora deseada</label>
+            <input
+              type="time"
+              name="time"
+              required
+              class="mt-1 w-full rounded border px-3 py-2"
+            >
+          </div>
+        </div>
+      
+        <div>
+          <label class="block text-sm font-medium">Tipo de servicio</label>
+          <select
+            name="service"
+            required
+            class="mt-1 w-full rounded border px-3 py-2"
+          >
+            <option
+              value=""
+              disabled
+              selected
+            >Selecciona…</option>
+            <option>Consulta legal</option>
+            <option>Redacción de contrato</option>
+            <option>Asesoría empresarial</option>
+          </select>
+        </div>
+      
+        <div>
+          <label class="block text-sm font-medium">Comentarios adicionales</label>
+          <textarea
+            name="comments"
+            rows="3"
+            class="mt-1 w-full rounded border px-3 py-2"
+            placeholder="Detalles del caso…"
+          ></textarea>
+        </div>
+      
+        <button class="inline-flex items-center gap-2 rounded bg-emerald-600 px-4 py-2 text-white hover:bg-emerald-700">
+          Agendar cita
+        </button>
+      
+        <p
+          id="status"
+          class="text-sm text-gray-600"
+        ></p>
+      </form>
+
+    </section>
+
   </main>
 
   <!-- footer -->
@@ -301,5 +379,7 @@
       new Mapkick.Map("map", [{latitude: 12.443111, longitude: -86.865667}])
     </script>
     <script src="js/main.js"></script>
+    <script src="js/agenda.js"></script>
+
 </body>
 </html>
