@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <title>Gracias</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="output.css" rel="stylesheet">
+</head>
+<body class="min-h-screen grid place-items-center bg-gray-50">
+  <div class="max-w-md bg-white p-6 rounded shadow">
+    <h1 class="text-xl font-semibold mb-4">¡Cita enviada!</h1>
+    <p id="resumen" class="text-sm text-gray-700 mb-4"></p>
+    <a id="gcal"
+       class="inline-flex items-center justify-center rounded bg-[#472427] text-white px-4 py-2 hover:bg-[#36171a]"
+       target="_blank" rel="noopener">Agregar a Google Calendar</a>
+  </div>
+
+  <script>
+    const g = sessionStorage.getItem('gcal');
+    const nombre = sessionStorage.getItem('nombre');
+    const servicio = sessionStorage.getItem('servicio');
+    const fecha = sessionStorage.getItem('fecha');
+    const hora = sessionStorage.getItem('hora');
+
+    if (g) {
+      document.getElementById('gcal').href = g;
+    }
+    document.getElementById('resumen').textContent =
+      nombre ? `Gracias, ${nombre}. Tu cita para "${servicio}" el ${fecha} a las ${hora} fue enviada.` :
+               'Tu cita fue enviada.';
+  </script>
+</body>
+</html>

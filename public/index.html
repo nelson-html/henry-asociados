@@ -23,12 +23,12 @@
 <div class="sticky top-0 z-50 w-full">
 
     <header class="flex justify-between items-center bg-[#472427] text-white w-screen lg:w-full lg:overflow-hidden lg:px-3 ">
-      <div class="logo min-h-4 w-full lg:w-full ">
+      <div class="logo min-h-4 w-full lg:w-1/3 ">
         <img class=" max-h-16 lg:block lg:min-h-8/12" src="assets/logo_tinoco&asociados.avif" alt="logo el asociados">
       </div>
 
     <nav class="nav w-full justify-end flex pr-3 lg:w-full ">
-      <img class="nav-hamburger pl-3 max-h-16  lg:hidden lg:cursor-pointer" src="assets/menu-right.png" alt="icon_burger">
+      <img class="nav-hamburger pl-3 max-h-12  lg:hidden lg:cursor-pointer" src="assets/menu-right.png" alt="icon_burger">
 
       <ul
         class="ul absolute top-16 left-0 m-auto flex w-full flex-col gap-4 text-center
@@ -43,13 +43,28 @@
         <li><a class="hover:text-amber-100" href="#firma">Nuestra Firma</a></li>
         <li><a class="hover:text-amber-100" href="#areaspractica">Areas de Practica</a></li>
         <li><a class="hover:text-amber-100" href="#contacto">Contacto</a></li>
-        <li><a class="hover:text-amber-100" href="#agenda">Agenta tu cita</a></li>
+        <li><a class="hover:text-amber-100" href="#agenda">Agenda tu cita</a></li>
       </ul>
     </nav>
     
   </header>
 </div>
-  
+
+        <!-- icono de telegram -->
+<!--   <aside class="fixed flex items-end w-full right-6">
+          <a
+            id="bot-icon"
+            class="w-full shadow-lg focus:ring-2 focus:ring-[#472427] border bg-emerald-400"
+            href="https://t.me/Henryasociados_bot">
+
+            <img
+            class="max-h-10 max-w-10"
+            src="assets/telegram-icon.avif"
+            alt="telegram-icon">
+
+        </a>
+  </aside> -->
+
   <main class=" text-white flex flex-col w-full font-Montserrat overflow-hidden ">
 
     <!-- banner de incio -->
@@ -68,7 +83,7 @@
       </div>
     </div>
 
-    <!-- seccion1 -->
+    <!-- seccion1 - quienes somos -->
     <section id="firma" class="w-screen text-black flex">
       <div class="flex flex-col p-4 gap-3 w-full lg:p-8">
 
@@ -89,7 +104,7 @@
 
     </section>
 
-    <!-- seccion 2 -->
+    <!-- seccion 2 - porque contratar la firma -->
     <section class="w-screen flex flx-col p-4 bg-[#472427] md:justify-center">
 
       <div class="text-center p-2 my-12 md:w-full">
@@ -118,7 +133,25 @@
       </div>
     </section>
 
-    <!-- seccion 3 -->
+    <!-- seccion de mision y viision xd -->
+    <section class="w-full text-black bg-[#f5f2f2]">
+      <div class="flex flex-col w-full p-5 my-10 gap-10 lg:flex-row lg:flex-wrap">
+
+        <div class="flex flex-col items-center bg-white p-8 gap-5 lg:shrink lg:grow lg:w-1/3">
+          <img loading="lazy" class="max-h-14 max-w-14" src="assets/mision.avif" alt="mision icon">
+          <h2 class="font-bold">Nuestra Misión</h2>
+          <p class="text-[#353535] text-justify">Brindar soluciones jurídicas estratégicas, efectivas y costo‑eficientes a empresas, inversionistas y personas nicaragüenses y extranjeras, mediante una asesoría integral en litigio, resolución alterna de conflictos, derecho corporativo, familia y contratación, con excelencia técnica, ética y trato cercano.</p>
+        </div>
+
+        <div class="flex flex-col items-center bg-white p-8 gap-5 lg:shrink lg:grow lg:w-1/3">
+          <img loading="lazy" class="max-h-14 max-w-14" src="assets/mision.avif" alt="Vision icon">
+          <h2 class="font-bold">Nuestra Visión</h2>
+          <p class="text-[#353535] text-justify">Ser la firma legal de referencia en Nicaragua para clientes locales e internacionales que buscan resultados confiables y eficientes, liderando en estrategias de resolución alterna de conflictos y en asesoría corporativa, e innovando continuamente para ofrecer servicios accesibles, transparentes y de alta calidad.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- seccion 3 - nuestros valores en icons -->
     <section class="w-screen py-16 md:py-24">
       
       <div class="w-full flex flex-col text-black items-center p-3 gap-10 md:flex-wrap md:flex-row md:justify-center md:gap-5 md:py-8 md:content-between">
@@ -146,7 +179,7 @@
       </div>
     </section>
 
-    <!-- Seccion 4 -->
+    <!-- Seccion 4 - areas practicas-->
     <section id="areaspractica" class="w-screen text-black p-4 py-15 text-center bg-[#f5f2f2]">
       <div class="w-full flex flex-col ">
         <h2 class="text-[var(--color-rojoMain)] text-1xl font-bold lg:text-2xl">Áreas de práctica</h2>
@@ -270,83 +303,59 @@
   
     </section>
 
+    
     <!-- agenda tu cita -->
-    <section class="w-full flex flex-col text-black">
-      <form
-        id="agenda"
-        class="w-full space-y-4 max-w-xl flex py-10 justify-center flex-col m-auto"
-        novalidate
-      >
-        <div>
-          <label class="block text-sm font-medium">Nombre completo</label>
-          <input
-            name="name"
-            required
-            class="mt-1 w-full rounded border px-3 py-2"
-            placeholder="Nombre & Apellido"
-          >
-        </div>
-      
-        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-          <div>
-            <label class="block text-sm font-medium">Fecha deseada</label>
-            <input
-              type="date"
-              name="date"
-              required
-              class="mt-1 w-full rounded border px-3 py-2"
-            >
-          </div>
-          <div>
-            <label class="block text-sm font-medium">Hora deseada</label>
-            <input
-              type="time"
-              name="time"
-              required
-              class="mt-1 w-full rounded border px-3 py-2"
-            >
-          </div>
-        </div>
-      
-        <div>
-          <label class="block text-sm font-medium">Tipo de servicio</label>
-          <select
-            name="service"
-            required
-            class="mt-1 w-full rounded border px-3 py-2"
-          >
-            <option
-              value=""
-              disabled
-              selected
-            >Selecciona…</option>
-            <option>Consulta legal</option>
-            <option>Redacción de contrato</option>
-            <option>Asesoría empresarial</option>
-          </select>
-        </div>
-      
-        <div>
-          <label class="block text-sm font-medium">Comentarios adicionales</label>
-          <textarea
-            name="comments"
-            rows="3"
-            class="mt-1 w-full rounded border px-3 py-2"
-            placeholder="Detalles del caso…"
-          ></textarea>
-        </div>
-      
-        <button class="inline-flex items-center gap-2 rounded bg-emerald-600 px-4 py-2 text-white hover:bg-emerald-700">
-          Agendar cita
-        </button>
-      
-        <p
-          id="status"
-          class="text-sm text-gray-600"
-        ></p>
-      </form>
+  <section class="w-full flex flex-col text-black">
+    <form
+      id="agenda"
+      class="space-y-4 max-w-xl flex py-10 justify-center flex-col m-auto"
+      novalidate
+    >
+      <!-- URL de gracias (ajústala a tu proyecto) -->
+      <input type="hidden" id="nextUrl" value="https://henry-asociados.vercel.app/gracias.html">
 
-    </section>
+      <div>
+        <label class="block text-sm font-medium">Nombre completo</label>
+        <input name="name" required class="mt-1 w-full rounded border px-3 py-2" placeholder="Nombre & Apellido">
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+        <div>
+          <label class="block text-sm font-medium">Fecha deseada</label>
+          <input type="date" name="date" required class="mt-1 w-full rounded border px-3 py-2">
+        </div>
+        <div>
+          <label class="block text-sm font-medium">Hora deseada</label>
+          <input type="time" name="time" required class="mt-1 w-full rounded border px-3 py-2">
+        </div>
+      </div>
+
+      <div>
+        <label class="block text-sm font-medium">Tipo de servicio</label>
+        <select name="service" required class="mt-1 w-full rounded border px-3 py-2">
+          <option value="" disabled selected>Selecciona…</option>
+          <option>Consulta legal</option>
+          <option>Redacción de contrato</option>
+          <option>Asesoría empresarial</option>
+        </select>
+      </div>
+
+      <div>
+        <label class="block text-sm font-medium">Comentarios adicionales</label>
+        <textarea name="comments" rows="3" class="mt-1 w-full rounded border px-3 py-2" placeholder="Detalles del caso…"></textarea>
+      </div>
+
+      <!-- Si quieres copia al cliente, agrega un campo visible y lo enviarás como _cc -->
+      <!-- <input type="email" name="client_email" placeholder="Tu correo (opcional)" class="mt-1 w-full rounded border px-3 py-2"> -->
+
+      <button class="inline-flex justify-center gap-2 rounded bg-[#472427] px-4 py-2 text-white hover:bg-[#3b1b1d] cursor-pointer">
+        Agendar cita
+      </button>
+
+      <p id="status" class="text-sm text-gray-600"></p>
+    </form>
+  </section>
+
 
   </main>
 
