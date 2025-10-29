@@ -49,7 +49,22 @@
     
   </header>
 </div>
-  
+
+        <!-- icono de telegram -->
+<!--   <aside class="fixed flex items-end w-full right-6">
+          <a
+            id="bot-icon"
+            class="w-full shadow-lg focus:ring-2 focus:ring-[#472427] border bg-emerald-400"
+            href="https://t.me/Henryasociados_bot">
+
+            <img
+            class="max-h-10 max-w-10"
+            src="assets/telegram-icon.avif"
+            alt="telegram-icon">
+
+        </a>
+  </aside> -->
+
   <main class=" text-white flex flex-col w-full font-Montserrat overflow-hidden ">
 
     <!-- banner de incio -->
@@ -123,13 +138,13 @@
       <div class="flex flex-col w-full p-5 my-10 gap-10 lg:flex-row lg:flex-wrap">
 
         <div class="flex flex-col items-center bg-white p-8 gap-5 lg:shrink lg:grow lg:w-1/3">
-          <img loading="lazy" class="max-h-14 max-w-14" src="assets/mision.avif" alt="" srcset="">
+          <img loading="lazy" class="max-h-14 max-w-14" src="assets/mision.avif" alt="mision icon">
           <h2 class="font-bold">Nuestra Misión</h2>
           <p class="text-[#353535] text-justify">Brindar soluciones jurídicas estratégicas, efectivas y costo‑eficientes a empresas, inversionistas y personas nicaragüenses y extranjeras, mediante una asesoría integral en litigio, resolución alterna de conflictos, derecho corporativo, familia y contratación, con excelencia técnica, ética y trato cercano.</p>
         </div>
 
         <div class="flex flex-col items-center bg-white p-8 gap-5 lg:shrink lg:grow lg:w-1/3">
-          <img loading="lazy" class="max-h-14 max-w-14" src="assets/mision.avif" alt="" srcset="">
+          <img loading="lazy" class="max-h-14 max-w-14" src="assets/mision.avif" alt="Vision icon">
           <h2 class="font-bold">Nuestra Visión</h2>
           <p class="text-[#353535] text-justify">Ser la firma legal de referencia en Nicaragua para clientes locales e internacionales que buscan resultados confiables y eficientes, liderando en estrategias de resolución alterna de conflictos y en asesoría corporativa, e innovando continuamente para ofrecer servicios accesibles, transparentes y de alta calidad.</p>
         </div>
@@ -288,83 +303,59 @@
   
     </section>
 
+    
     <!-- agenda tu cita -->
-    <section class="w-full flex flex-col text-black">
-      <form
-        id="agenda"
-        class="space-y-4 max-w-xl flex py-10 justify-center flex-col m-auto"
-        novalidate
-      >
-        <div>
-          <label class="block text-sm font-medium">Nombre completo</label>
-          <input
-            name="name"
-            required
-            class="mt-1 w-full rounded border px-3 py-2"
-            placeholder="Nombre & Apellido"
-          >
-        </div>
-      
-        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-          <div>
-            <label class="block text-sm font-medium">Fecha deseada</label>
-            <input
-              type="date"
-              name="date"
-              required
-              class="mt-1 w-full rounded border px-3 py-2"
-            >
-          </div>
-          <div>
-            <label class="block text-sm font-medium">Hora deseada</label>
-            <input
-              type="time"
-              name="time"
-              required
-              class="mt-1 w-full rounded border px-3 py-2"
-            >
-          </div>
-        </div>
-      
-        <div>
-          <label class="block text-sm font-medium">Tipo de servicio</label>
-          <select
-            name="service"
-            required
-            class="mt-1 w-full rounded border px-3 py-2"
-          >
-            <option
-              value=""
-              disabled
-              selected
-            >Selecciona…</option>
-            <option>Consulta legal</option>
-            <option>Redacción de contrato</option>
-            <option>Asesoría empresarial</option>
-          </select>
-        </div>
-      
-        <div>
-          <label class="block text-sm font-medium">Comentarios adicionales</label>
-          <textarea
-            name="comments"
-            rows="3"
-            class="mt-1 w-full rounded border px-3 py-2"
-            placeholder="Detalles del caso…"
-          ></textarea>
-        </div>
-      
-        <button class="inline-flex justify-center gap-2 rounded bg-[#472427] px-4 py-2 text-white hover:bg-[#3b1b1d] cursor-pointer">
-          Agendar cita
-        </button>
-      
-        <p
-          id="status"
-          class="text-sm text-gray-600"
-        ></p>
-      </form>
+  <section class="w-full flex flex-col text-black">
+    <form
+      id="agenda"
+      class="space-y-4 max-w-xl flex py-10 justify-center flex-col m-auto"
+      novalidate
+    >
+      <!-- URL de gracias (ajústala a tu proyecto) -->
+      <input type="hidden" id="nextUrl" value="https://henry-asociados.vercel.app/gracias.html">
 
-    </section>
+      <div>
+        <label class="block text-sm font-medium">Nombre completo</label>
+        <input name="name" required class="mt-1 w-full rounded border px-3 py-2" placeholder="Nombre & Apellido">
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+        <div>
+          <label class="block text-sm font-medium">Fecha deseada</label>
+          <input type="date" name="date" required class="mt-1 w-full rounded border px-3 py-2">
+        </div>
+        <div>
+          <label class="block text-sm font-medium">Hora deseada</label>
+          <input type="time" name="time" required class="mt-1 w-full rounded border px-3 py-2">
+        </div>
+      </div>
+
+      <div>
+        <label class="block text-sm font-medium">Tipo de servicio</label>
+        <select name="service" required class="mt-1 w-full rounded border px-3 py-2">
+          <option value="" disabled selected>Selecciona…</option>
+          <option>Consulta legal</option>
+          <option>Redacción de contrato</option>
+          <option>Asesoría empresarial</option>
+        </select>
+      </div>
+
+      <div>
+        <label class="block text-sm font-medium">Comentarios adicionales</label>
+        <textarea name="comments" rows="3" class="mt-1 w-full rounded border px-3 py-2" placeholder="Detalles del caso…"></textarea>
+      </div>
+
+      <!-- Si quieres copia al cliente, agrega un campo visible y lo enviarás como _cc -->
+      <!-- <input type="email" name="client_email" placeholder="Tu correo (opcional)" class="mt-1 w-full rounded border px-3 py-2"> -->
+
+      <button class="inline-flex justify-center gap-2 rounded bg-[#472427] px-4 py-2 text-white hover:bg-[#3b1b1d] cursor-pointer">
+        Agendar cita
+      </button>
+
+      <p id="status" class="text-sm text-gray-600"></p>
+    </form>
+  </section>
+
 
   </main>
 
