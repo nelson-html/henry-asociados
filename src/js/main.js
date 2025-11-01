@@ -27,11 +27,18 @@ d.addEventListener("click", e=>{
 function openMenu() {
     $ul.classList.remove("max-h-0","opacity-0","-translate-y-2","pointer-events-none");
     $ul.classList.add("max-h-96","opacity-100","translate-y-0","pointer-events-auto");
+    $btn_hamburger.src = "assets/x-mark.avif";
+    $btn_hamburger.classList.remove("max-h-12")
+    $btn_hamburger.classList.add("max-h-8")
 }
 
 function closeMenu() {
     $ul.classList.remove("max-h-96","opacity-100","translate-y-0","pointer-events-auto");
     $ul.classList.add("max-h-0","opacity-0","-translate-y-2","pointer-events-none");
+    $btn_hamburger.src = "assets/menu-right.png";
+    $btn_hamburger.classList.add("max-h-12")
+    $btn_hamburger.classList.remove("max-h-8")
+    
 }
 
 $btn_hamburger.addEventListener("click", () => {
@@ -73,7 +80,15 @@ setTimeout(() => {
 
 setInterval(siguiente, 3000);
 
-// mapa georeferencia
+// cambio de titulo xd
+
+d.addEventListener("visibilitychange", () =>{
+    if(d.hidden){
+        d.title = "No te vayas, te ayudaremos";
+    }else{
+        d.title = "Gracias por volver🫡";
+    }
+})
 
 
 
