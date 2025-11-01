@@ -305,8 +305,8 @@
 
     
     <!-- agenda tu cita -->
-  <section class="w-full flex flex-col text-black">
-    <h2 id="agendar" class="text-center pt-10 text-2xl font-semibold text-[var(--color-rojoMain)]">
+  <section class="w-full flex flex-col text-black ">
+    <h2 id="agendar" class="text-center pt-10 text-2xl font-semibold text-[var(--color-rojoMain)] ">
       Agendar Cita
     </h2>
     <form
@@ -322,7 +322,10 @@
         <input name="name" required class="mt-1 w-full rounded border px-3 py-2" placeholder="Nombre & Apellido">
       </div>
 
-      <input type="email" name="client_email" placeholder="Tu correo" class="mt-1 w-full rounded border px-3 py-2">
+      <div>
+        <label class="block text-sm font-medium">Correo electronico</label>
+        <input type="email" name="client_email" placeholder="Tu correo" class="mt-1 w-full rounded border px-3 py-2">
+      </div>
 
       <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
         <div>
