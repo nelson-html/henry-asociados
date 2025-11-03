@@ -1,4 +1,4 @@
-const DESTINO_FORM_SUBMIT = "https://formsubmit.co/martineznelson515@gmail.com";
+const DESTINO_FORM_SUBMIT = "https://formsubmit.co/tinocomathew845@gmail.com";
 
 function fmtUTC(d) {
   return d.toISOString().replace(/[-:]/g, '').split('.')[0] + 'Z';
